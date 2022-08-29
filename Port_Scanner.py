@@ -23,7 +23,7 @@ try:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         socket.setdefaulttimeout(1)
         result = s.connect_ex((target, port)) #Returns an error indicator
-        print("Checking port {}" .format(port)) #You can delete this line, to only print open ports
+        print("Checking port {}" .format(port)) #You can comment this line, to only print open ports
         if result == 0:
             print("Port {} is open" .format(port))
             s.close
